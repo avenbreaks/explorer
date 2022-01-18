@@ -320,7 +320,7 @@ export const getTxTitle = (transaction: Transaction | MempoolTransaction) => {
         />
       );
     case 'token_transfer':
-      return `${microToStacks(transaction.token_transfer.amount)} STX`;
+      return `${microToStacks(transaction.token_transfer.amount)} GTFX`;
     case 'coinbase':
       return `Block #${(transaction as Transaction).block_height} coinbase`;
     default:
